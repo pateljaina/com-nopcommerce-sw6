@@ -1,0 +1,775 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3660116800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Verify user should navigate to Desktops Page successfully",
+        "description": "",
+        "id": "computer-page-test;verify-user-should-navigate-to-desktops-page-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 724611300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 56625900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I am on homepage",
+            "match": {
+              "location": "ComputerPageSteps.iAmOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1036211500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on Computers menu tab",
+            "match": {
+              "location": "ComputerPageSteps.iClickOnComputersMenuTab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 451639000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on Desktops sub menu",
+            "match": {
+              "location": "ComputerPageSteps.iClickOnDesktopsSubMenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29918600,
+              "error_message": "java.lang.AssertionError: Desktops expected [Desktops] but found [Desktops page is not displayed]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat com.nopcommerce.demo.steps.ComputerPageSteps.iAmNavigatedToTheDesktopsPageSuccessfully(ComputerPageSteps.java:72)\r\n\tat ✽.Then I am navigated to the Desktops page successfully(ComputerPage.feature:15)\r\n",
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "I am navigated to the Desktops page successfully",
+            "match": {
+              "location": "ComputerPageSteps.iAmNavigatedToTheDesktopsPageSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@Sanity"
+          },
+          {
+            "line": 10,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Computer Page Test",
+    "description": "As a user I want to use the different features on the Computer Page",
+    "id": "computer-page-test",
+    "keyword": "Feature",
+    "uri": "ComputerPage.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1706597000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Verify user should get error message on logging in with invalid credentials",
+        "description": "",
+        "id": "login-page-test;verify-user-should-get-error-message-on-logging-in-with-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 577970500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 22500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I am on homepage",
+            "match": {
+              "location": "ComputerPageSteps.iAmOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 847769200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on the login link",
+            "match": {
+              "location": "LoginPageSteps.iClickOnTheLoginLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62017900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I enter invalid email address \"testerhv123@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testerhv123@gmail.com",
+                  "offset": 31
+                }
+              ],
+              "location": "LoginPageSteps.iEnterInvalidEmailAddress(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51703400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter invalid password \"password123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password123",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginPageSteps.iEnterInvalidPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 372633800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on login button",
+            "match": {
+              "location": "LoginPageSteps.iClickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27681100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I get error message \"Login was unsuccessful. Please correct the errors and try again.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login was unsuccessful. Please correct the errors and try again.",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginPageSteps.iGetErrorMessage(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@Sanity"
+          },
+          {
+            "line": 10,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Login Page Test",
+    "description": "As a user i want to Log in to the nop commerce website",
+    "id": "login-page-test",
+    "keyword": "Feature",
+    "uri": "LoginPage.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2201407400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Verify that Firstname Lastname email password and confirm password fields are mandatory",
+        "description": "",
+        "id": "register-page-test;verify-that-firstname-lastname-email-password-and-confirm-password-fields-are-mandatory;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 590155500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 16200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am on homepage",
+            "match": {
+              "location": "ComputerPageSteps.iAmOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 434648600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on register link",
+            "match": {
+              "location": "RegisterPageSteps.iClickOnRegisterLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45631400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on Register button",
+            "match": {
+              "location": "RegisterPageSteps.iClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42321900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see error message \"First name is required.\" for field \"FirstName\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "First name is required.",
+                  "offset": 28
+                },
+                {
+                  "val": "FirstName",
+                  "offset": 64
+                }
+              ],
+              "location": "RegisterPageSteps.iShouldSeeErrorMessageForField(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@Sanity"
+          },
+          {
+            "line": 11,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2150438400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Verify that Firstname Lastname email password and confirm password fields are mandatory",
+        "description": "",
+        "id": "register-page-test;verify-that-firstname-lastname-email-password-and-confirm-password-fields-are-mandatory;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 586563900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 20400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am on homepage",
+            "match": {
+              "location": "ComputerPageSteps.iAmOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 875405400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on register link",
+            "match": {
+              "location": "RegisterPageSteps.iClickOnRegisterLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46578000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on Register button",
+            "match": {
+              "location": "RegisterPageSteps.iClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45476400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see error message \"Last name is required.\" for field \"LastName\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Last name is required.",
+                  "offset": 28
+                },
+                {
+                  "val": "LastName",
+                  "offset": 63
+                }
+              ],
+              "location": "RegisterPageSteps.iShouldSeeErrorMessageForField(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@Sanity"
+          },
+          {
+            "line": 11,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1655560700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Verify that Firstname Lastname email password and confirm password fields are mandatory",
+        "description": "",
+        "id": "register-page-test;verify-that-firstname-lastname-email-password-and-confirm-password-fields-are-mandatory;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 581148100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am on homepage",
+            "match": {
+              "location": "ComputerPageSteps.iAmOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 419273200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on register link",
+            "match": {
+              "location": "RegisterPageSteps.iClickOnRegisterLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49003100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on Register button",
+            "match": {
+              "location": "RegisterPageSteps.iClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56853200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see error message \"Email is required.\" for field \"Email\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Email is required.",
+                  "offset": 28
+                },
+                {
+                  "val": "Email",
+                  "offset": 59
+                }
+              ],
+              "location": "RegisterPageSteps.iShouldSeeErrorMessageForField(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@Sanity"
+          },
+          {
+            "line": 11,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1717663200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Verify that Firstname Lastname email password and confirm password fields are mandatory",
+        "description": "",
+        "id": "register-page-test;verify-that-firstname-lastname-email-password-and-confirm-password-fields-are-mandatory;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 573656700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am on homepage",
+            "match": {
+              "location": "ComputerPageSteps.iAmOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 845330600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on register link",
+            "match": {
+              "location": "RegisterPageSteps.iClickOnRegisterLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47949600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on Register button",
+            "match": {
+              "location": "RegisterPageSteps.iClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63962500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see error message \"Password is required.\" for field \"Password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password is required.",
+                  "offset": 28
+                },
+                {
+                  "val": "Password",
+                  "offset": 62
+                }
+              ],
+              "location": "RegisterPageSteps.iShouldSeeErrorMessageForField(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@Sanity"
+          },
+          {
+            "line": 11,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1825461600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Verify that Firstname Lastname email password and confirm password fields are mandatory",
+        "description": "",
+        "id": "register-page-test;verify-that-firstname-lastname-email-password-and-confirm-password-fields-are-mandatory;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 584006800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am on homepage",
+            "match": {
+              "location": "ComputerPageSteps.iAmOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 424439300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on register link",
+            "match": {
+              "location": "RegisterPageSteps.iClickOnRegisterLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51815300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on Register button",
+            "match": {
+              "location": "RegisterPageSteps.iClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82099900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see error message \"Password is required.\" for field \"ConfirmPassword\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password is required.",
+                  "offset": 28
+                },
+                {
+                  "val": "ConfirmPassword",
+                  "offset": 62
+                }
+              ],
+              "location": "RegisterPageSteps.iShouldSeeErrorMessageForField(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@Sanity"
+          },
+          {
+            "line": 11,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Register Page Test",
+    "description": "\r\nAs a user I am able to register on the nop commerce website",
+    "id": "register-page-test",
+    "keyword": "Feature",
+    "uri": "RegisterPage.feature"
+  }
+]
